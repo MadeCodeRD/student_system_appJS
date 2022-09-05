@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Nova+Square&family=Paprika&family=Shadows+Into+Light&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background-image: url(../assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+header{
+    text-align: center;
+    margin-top: 2.5rem;
+    font-family:Paprika;
+}
+
+
+header h1{
+    font-size: 8rem ;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.3);
+    background-image: url(../assets/images/water.png);
+    -webkit-background-clip: text;
+    animation: animate 15s infinite;
+}
+
+header p{
+    font-family:"Nova Square";
+    color: rgb(1, 92, 72);
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+@keyframes animate{
+    from   {
+        background-position: left 0 top 0 ;
+    }
+
+    to{
+        background-position: left 100rem top 0;
+    }
+}
+
+
+.formulario{
+    display: grid;
+    grid-template-columns: 9rem 30rem;
+    justify-content: center;
+    margin-top: 7rem;
+    grid-gap: 5rem;
+}
+
+.formulario::after{
+  content: "";
+  background: url(../assets/images/1.png);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.formulario label{
+    font-family:Paprika;
+    font-weight: bold;
+}
+
+.formulario label:hover{
+    color: rgb(80, 180, 133);
+    
+    
+}
+
+.formulario input[type=text]{
+    padding: 1rem;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    
+}
+
+.formulario input[type=number]{
+    padding: 1rem;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: rgb(161, 111, 111);
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .btn{
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  
+  }
+
+  .btn:hover{
+    background-color: #45a049;
+  }

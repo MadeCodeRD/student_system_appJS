@@ -1,0 +1,97 @@
+body::after{
+    content: "";
+    background: url(../assets/images/blur-calculator.jpg);
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-weight: bold;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .last-span{
+    text-align:end;
+}
+
+
+header{
+    text-align: center;
+    margin-top: 2.5rem;
+    font-family:Paprika;
+}
+
+
+header h1{
+    font-size: 5rem ;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.3);
+    background-image: url(../assets/images/water.png);
+    -webkit-background-clip: text;
+    animation: animate 15s infinite;
+}
+
+@keyframes animate{
+    from   {
+        background-position: left 0 top 0 ;
+    }
+
+    to{
+        background-position: left 100rem top 0;
+    }
+}
+
+
+p{
+    width: 20%;
+    padding: 1rem;
+    background-color: #04AA6D;
+    color: white;
+    border: 2px solid #ddd;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.btn{
+    background: linear-gradient(90deg, hsla(240, 0%, 42%, 1) 1%, hsla(0, 97%, 25%, 1) 73%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-style: italic;
+    }
+  
+    .btn:hover{
+        background: linear-gradient(90deg, hsla(240, 100%, 50%, 1) 37%, hsla(0, 97%, 25%, 1) 73%);
+    }
